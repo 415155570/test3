@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements MyListView.ILoadL
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Log.d("TAG", "点击了第" + position + "项");
+                Log.d("MainActivity", "点击了第" + position + "项");
                 MyData md = new MyData("修改后的数据：position = " + position);
                 mListViewDatas.set(position, md);
                 notifyDataSetChanged(position, myListView);
